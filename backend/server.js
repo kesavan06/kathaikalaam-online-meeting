@@ -852,6 +852,6 @@ function removeParticipant(allRoomDetails, roomId, socketId) {
   }
 }
 
-server.listen(3002, () => {
-  console.log(`Server running on https:localhost:3002`);
+server.listen(3002, "0.0.0.0", () => {
+  console.log(`Server running on 0.0.0.0`);
 });
