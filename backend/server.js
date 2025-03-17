@@ -5,16 +5,8 @@ const socketio = require("socket.io");
 const fs = require("fs");
 const path = require("path");
 
-const certPath = path.join(__dirname, "certs", "172.17.61.162.pem");
-const keyPath = path.join(__dirname, "certs", "172.17.61.162-key.pem");
-
-const options = {
-  cert: fs.readFileSync(certPath),
-  key: fs.readFileSync(keyPath),
-};
-
 const app = express();
-const server = https.createServer(options, app);
+const server = https.createServer(app);
 const io = socketio(server, {
   cors: {
     origin: "*",
@@ -37,9 +29,10 @@ let notes;
 const mysql = require("mysql2");
 
 const connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "kesavan@123",
+  host: "mysql-1adb12a9-kesavan-bed8.h.aivencloud.com",
+  host:"17832",
+  user: "avnadmin",
+  password: "AVNS_sQ94r5cb1uAh-xBI6qf",
 });
 
 connection.connect((err) => {
@@ -59,9 +52,10 @@ connection.query("CREATE DATABASE if not exists users_db ;", (err, data) => {
 connection.end();
 
 const dbConnection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "kesavan@123",
+  host: "mysql-1adb12a9-kesavan-bed8.h.aivencloud.com",
+  host:"17832",
+  user: "avnadmin",
+  password: "AVNS_sQ94r5cb1uAh-xBI6qf",
   database: "users_db",
 });
 
