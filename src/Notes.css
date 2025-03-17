@@ -1,0 +1,68 @@
+.notesControl {
+  width: 65px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.forBold {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.forNormal {
+  font-size: 18px;
+}
+
+#wholeContainer {
+  width: 475px;
+  height: 100%;
+}
+
+#notesDiv {
+  width: 100%;
+  height: 88%;
+  padding: 20px;
+  background-color: rgb(32, 33, 40);
+
+  color: white;
+  /* overflow-x: hidden; */
+  overflow: scroll;
+  overflow-x: hidden;
+  outline: none;
+}
+
+button {
+  border: 1px solid transparent;
+  color: white;
+  background-color: #101010;
+  border: 1px solid #2a2a28;
+  font-size: 1em;
+}
+
+.close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  color: white;
+  background-color: #101010;
+  border: 1px solid #2a2a28;
+  cursor: pointer;
+}
+
+#wholeContainer input {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(32, 33, 40);
+  border: none;
+  font-size: 2em;
+  outline: none;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  border-bottom: 2px solid black;
+}

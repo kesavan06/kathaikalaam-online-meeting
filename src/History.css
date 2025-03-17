@@ -1,0 +1,84 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.historyParent {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-color: #111827;
+    padding: 2%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+
+.meetingDetail {
+    width: 100%;
+    height: 7%;
+    border-radius: 10px;
+    background-color: #1F2937;
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+}
+
+
+.timeManage {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.timeIcon {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userName {
+    width: 20%;
+    height: 100%;
+}
+
+.proParent {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.chatAnoteDowload {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+    margin-left: 10%;
+}
+
+.flex {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6%;
+}
+
+.leave{
+    border: 1px solid white;
+    position: absolute;
+    right: 2.3%;
+    top: 2%;   
+    font-size: 1.6rem;
+    cursor: pointer;
+}

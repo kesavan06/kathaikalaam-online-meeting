@@ -1,0 +1,92 @@
+.footerBox {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 40px 0px 40px;
+}
+
+.menu {
+  color: rgb(241, 241, 241);
+}
+
+.micVideoConrol {
+  display: flex;
+  align-items: center;
+  width: 8%;
+  justify-content: space-between;
+}
+
+.controlBox {
+  width:60px;
+  height: 50px;
+  border: 1px solid rgb(42, 42, 40);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+.changeColor {
+  color: white;
+  width: 20px;
+  height: 20px;
+}
+
+.meetingControl {
+  width: 24%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.leaveMeetingBtn{
+  width: 100px;
+  height: 40px;
+  background-color: rgb(255, 98, 58);
+  color: rgb(241, 241, 241);
+  font-size: 1em;
+  margin: 0px 0px 0px 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+
+}
+
+.moreControls {
+  width: 13%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.exit {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+.exitBox {
+  background-color: rgb(255, 98, 58);
+}
+
+.participantBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.participantBtn p {
+  color: white;
+  margin: 0px 0px 0px 5px;
+}
+
+.startRecord{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
