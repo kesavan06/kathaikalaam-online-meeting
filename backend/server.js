@@ -29,10 +29,10 @@ let notes;
 const mysql = require("mysql2");
 
 const connection = mysql.createConnection({
-  host: "mysql-1adb12a9-kesavan-bed8.h.aivencloud.com",
-  host:"17832",
+  host: "mysql-12e04aa1-kesavan-bed8.h.aivencloud.com",
+  port: "17832",
   user: "avnadmin",
-  password: "AVNS_sQ94r5cb1uAh-xBI6qf",
+  password: "AVNS_gaEwf6vm89AAHAnbKHz",
 });
 
 connection.connect((err) => {
@@ -52,10 +52,10 @@ connection.query("CREATE DATABASE if not exists users_db ;", (err, data) => {
 connection.end();
 
 const dbConnection = mysql.createConnection({
-  host: "mysql-1adb12a9-kesavan-bed8.h.aivencloud.com",
-  host:"17832",
+  host: "mysql-12e04aa1-kesavan-bed8.h.aivencloud.com",
+  port: "17832",
   user: "avnadmin",
-  password: "AVNS_sQ94r5cb1uAh-xBI6qf",
+  password: "AVNS_gaEwf6vm89AAHAnbKHz",
   database: "users_db",
 });
 
@@ -853,5 +853,5 @@ function removeParticipant(allRoomDetails, roomId, socketId) {
 }
 
 server.listen(3002, () => {
-  console.log(`Server running on https://172.17.61.162`);
+  console.log(`Server running on https:localhost:3002`);
 });
