@@ -100,7 +100,7 @@ dbConnection.query(meetingParicipantQuery, (err, result) => {
   console.log('Table "meetings_participant" created or already exists');
 });
 
-app.use(cors({ origin: "*" }));
+app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
